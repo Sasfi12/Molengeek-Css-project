@@ -4,13 +4,27 @@ body {
 
 #Introduction {
     /*Aligning and placing at the proper location */ 
+    
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background-image: url(../images/header.jpg);
     background-size: cover;
-    backdrop-filter: calc(0);   
+    & div {
+        width:auto ; 
+        height: auto;
+        position: relative;
+        right: 6%;  
+    & button {
+            width: 80%;
+            height: 100%;
+            background-color: white;
+            border: #7441A7 solid 1px;
+            color: #7441A7;
+            border-radius:  40px;
+        }
+    }
 }
 
 #aboutMe {
@@ -23,12 +37,13 @@ body {
             color: #7441A7;
         }
         & button {
-            width: 8%;
-            height: 8%;
+            width: 20%;
+            height: 10%;
             background-color: white;
             border: #7441A7 solid 1px;
             color: #7441A7;
             border-radius:  40px;
         }
     }
+
 }
