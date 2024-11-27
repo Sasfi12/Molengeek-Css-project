@@ -1,9 +1,10 @@
 body {
     margin: 0 ;
     margin-left: 10%; margin-right: 10%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    gap: 5%;
 }
-/*Some repeating classes */ 
+/*Some repeating classes and section rules */ 
 .whatido {
     display: flex;
     justify-content: center;
@@ -16,6 +17,9 @@ body {
         color: #7441A7;
         font-size: 3rem;
     }
+}
+section {
+    margin-top: 10%;
 }
 #Introduction {
     /*Aligning and placing at the proper location */ 
@@ -61,7 +65,6 @@ body {
 
 }
 main {
-    margin-top: 10%;
     display: flex;
     flex-direction: column;
     gap: 10rem;
@@ -102,7 +105,7 @@ main {
         justify-content: center;
         & .box {
             display: flex;
-            border: solid 1px;
+            border: solid 1px #DFE3E7;
             justify-content: center;
             flex-direction: column;
             align-items: center;
@@ -139,3 +142,93 @@ main {
         }
         }
     }
+/* End of main */ 
+
+#workWithMe {
+    background-color: #7441A7;
+    margin-left: -12rem; margin-right: -12rem;
+    padding-left: 24rem ; padding-right: 40rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    & h3 , p { 
+        color: white;
+    }
+    & button {
+        background-color: white;
+        color: black;
+        border: none;
+        width: 5rem;
+        height: 3rem;
+        font-weight: bolder;
+        border-radius: 10px;
+        font-size: large  ;
+    }
+    & button:hover {
+        cursor: pointer;
+    }
+}
+
+
+#Testimonial {
+    .Testimonies {
+        display: flex;
+        flex-direction: row;
+        & img {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 100%;
+            position: relative;
+            left: 40px;
+            top: 40px;
+
+        }
+        & div:not(.testimony-text)  {
+            display: flex;
+            flex-direction: row;
+            & .testimony-text {
+                border: solid #DFE3E7 1px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 2rem;
+            }
+        }
+    }
+}
+
+#Blog {
+    .blogs {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        & > div{
+            display: flex;
+            flex-direction: row;
+            border: #6F6F6F 1px solid;
+            width: auto;
+            height: auto;
+            & .blog {
+                display: flex;
+                flex-direction: column;
+                padding: 2%;
+                & h2 {
+                    color: #7441A7;
+                }
+                & line {
+                    gap: 2rem;
+                    display: flex;
+                    flex-direction: row ;
+                    align-items: center;
+                    justify-content: flex-start;
+                    color: #6F6F6F;
+                    & p {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
