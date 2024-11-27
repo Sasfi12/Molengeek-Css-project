@@ -134,5 +134,8 @@ main {
                 cursor: pointer;
             }
         }
+        & .box:not(:last-of-type) {
+            border-right: 0px;
+        }
         }
     }
