@@ -275,3 +275,24 @@ main {
     }
 }
 }
+.pre-footer {
+    & hr {
+        background-color: #6F6F6F;
+    }
+}
+#Footer {
+    display: flex;
+    justify-content: space-between;
+    & div:first-child {
+        display: flex;
+        align-items: center;
+    }
+    & .logos {
+        display: flex;
+        flex-direction: row;
+        gap: 1%;
+        & img {
+            width: 6em; height: 6em;
+        }
+    }
+}
