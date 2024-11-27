@@ -1,7 +1,22 @@
 body {
     margin: 0 ;
+    margin-left: 10%; margin-right: 10%;
 }
-
+/*Some repeating classes */ 
+.whatido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    flex-direction: column;
+    & p {
+       color:  #6F6F6F ;    
+    }
+    & h2 {
+        color: #7441A7;
+        font-size: 3rem;
+    }
+}
 #Introduction {
     /*Aligning and placing at the proper location */ 
     
@@ -9,8 +24,6 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url(../images/header.jpg);
-    background-size: cover;
     & div {
         width:auto ; 
         height: auto;
@@ -46,4 +59,24 @@ body {
         }
     }
 
+}
+
+#Service {
+ & .services {
+    display: flex;
+    gap: 5%;
+    justify-content: space-between;
+    & div {
+        padding: 5%;
+        border: 0.5px solid ;
+        justify-content: space-between;
+        & img {
+            width: 6rem;
+            height: 6rem;
+        }
+        & h3 {
+            color: #7441A7;
+        }
+    }
+ }
 }
