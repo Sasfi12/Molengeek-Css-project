@@ -1,6 +1,7 @@
 body {
     margin: 0 ;
 }
+
 #Introduction {
     /*Aligning and placing at the proper location */ 
     display: flex;
@@ -9,6 +10,25 @@ body {
     flex-direction: column;
     background-image: url(../images/header.jpg);
     background-size: cover;
-    backdrop-filter: calc(0);
-   
+    backdrop-filter: calc(0);   
+}
+
+#aboutMe {
+    display: flex;
+    & div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        & h2 {
+            color: #7441A7;
+        }
+        & button {
+            width: 8%;
+            height: 8%;
+            background-color: white;
+            border: #7441A7 solid 1px;
+            color: #7441A7;
+            border-radius:  40px;
+        }
+    }
 }
