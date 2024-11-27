@@ -1,10 +1,10 @@
 body {
     margin: 0 ;
     margin-left: 10%; margin-right: 10%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     gap: 5%;
 }
-/*Some repeating classes */ 
+/*Some repeating classes and section rules */ 
 .whatido {
     display: flex;
     justify-content: center;
@@ -17,6 +17,9 @@ body {
         color: #7441A7;
         font-size: 3rem;
     }
+}
+section {
+    margin-top: 10%;
 }
 #Introduction {
     /*Aligning and placing at the proper location */ 
@@ -62,7 +65,6 @@ body {
 
 }
 main {
-    margin-top: 10%;
     display: flex;
     flex-direction: column;
     gap: 10rem;
@@ -108,7 +110,6 @@ main {
             flex-direction: column;
             align-items: center;
             padding: 2% 5% 2% 5%;
-            margin-bottom: 4%;
             & img {
                 width: 5rem;
                 height: 5rem;
@@ -167,5 +168,33 @@ main {
     }
     & button:hover {
         cursor: pointer;
+    }
+}
+
+
+#Testimonial {
+    .Testimonies {
+        display: flex;
+        flex-direction: row;
+        & img {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 100%;
+            position: relative;
+            left: 40px;
+            top: 40px;
+
+        }
+        & div:not(.testimony-text)  {
+            display: flex;
+            flex-direction: row;
+            & .testimony-text {
+                border: solid #DFE3E7 1px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 2rem;
+            }
+        }
     }
 }
