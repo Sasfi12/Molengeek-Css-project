@@ -96,5 +96,23 @@ main {
 }
 
 #Pricing {
-    
+   & .prices-box {
+        display: flex;
+        justify-content: center;
+        & .box {
+            display: flex;
+            border: solid 1px;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            
+            & img {
+                width: 5rem;
+                height: 5rem;
+            }
+
+
+        }
+        }
+    }
 }
