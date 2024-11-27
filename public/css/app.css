@@ -1,3 +1,141 @@
 body {
     margin: 0 ;
+    margin-left: 10%; margin-right: 10%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+/*Some repeating classes */ 
+.whatido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    & p {
+       color:  #6F6F6F ;    
+    }
+    & h2 {
+        color: #7441A7;
+        font-size: 3rem;
+    }
+}
+#Introduction {
+    /*Aligning and placing at the proper location */ 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    & div {
+        width:auto ; 
+        height: auto;
+        position: relative;
+        right: 70px;  
+    & button {
+            width: 120px;
+            height: 40px;
+            background-color: #7441A7;
+            border: #7441A7 solid 1px;
+            color: white;
+            border-radius:  40px;
+        }
+    }
+}
+
+#aboutMe {
+    display: flex;
+    & div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        & h2 {
+            color: #7441A7;
+        }
+        & button {
+            width: 20%;
+            height: 10%;
+            background-color: white;
+            border: #7441A7 solid 1px;
+            color: #7441A7;
+            border-radius:  40px;
+        }
+    }
+
+}
+main {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+#Service {
+ & .services {
+    display: flex;
+    gap: 5%;
+    justify-content: space-between;
+    & div {
+        padding: 5%;
+        border: 0.5px solid ;
+        justify-content: space-between;
+        & img {
+            width: 6rem;
+            height: 6rem;
+        }
+        & h3 {
+            color: #7441A7;
+        }
+    }
+ }
+}
+
+#Portfolio {
+    & .folio-images {
+        display: flex;
+        justify-content: space-between;
+        & img {
+            width: 25rem; height: 25rem;
+        }
+    }
+}
+
+#Pricing {
+   & .prices-box {
+        display: flex;
+        justify-content: center;
+        & .box {
+            display: flex;
+            border: solid 1px;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 2% 5% 2% 5%;
+            & img {
+                width: 5rem;
+                height: 5rem;
+            }
+            & h2 {
+                color: #7441A7;
+                font-weight: 900;
+            }
+            & p {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            & h1 {
+                font-size: xx-large;
+            }
+            & button {
+                width: 6rem;
+                height: 2rem;
+                background-color: #7441A7;
+                color: white;
+                border: none;
+            }
+            & button:hover {
+                cursor: pointer;
+            }
+        }
+        & .box:not(:last-of-type) {
+            border-right: 0px;
+        }
+        }
+    }
