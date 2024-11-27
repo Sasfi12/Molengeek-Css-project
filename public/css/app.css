@@ -7,7 +7,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2%;
     flex-direction: column;
     & p {
        color:  #6F6F6F ;    
@@ -60,7 +59,12 @@ body {
     }
 
 }
-
+main {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
 #Service {
  & .services {
     display: flex;
@@ -79,4 +83,14 @@ body {
         }
     }
  }
+}
+
+#Portfolio {
+    & .folio-images {
+        display: flex;
+        justify-content: space-between;
+        & img {
+            width: 25rem; height: 25rem;
+        }
+    }
 }
