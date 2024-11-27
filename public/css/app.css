@@ -198,3 +198,37 @@ main {
         }
     }
 }
+
+#Blog {
+    .blogs {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        & > div{
+            display: flex;
+            flex-direction: row;
+            border: #6F6F6F 1px solid;
+            width: auto;
+            height: auto;
+            & .blog {
+                display: flex;
+                flex-direction: column;
+                padding: 2%;
+                & h2 {
+                    color: #7441A7;
+                }
+                & line {
+                    gap: 2rem;
+                    display: flex;
+                    flex-direction: row ;
+                    align-items: center;
+                    justify-content: flex-start;
+                    color: #6F6F6F;
+                    & p {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
