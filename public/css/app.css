@@ -232,3 +232,46 @@ main {
         }
     }
 }
+
+#Communicate {
+    display: flex;
+    flex-direction: column;
+    & hr {
+        color: black;
+    }
+    .nouilles {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #7441A7;
+        font-weight: bolder;
+        & > div {
+            display: flex;
+            gap: 2rem;
+        }
+        
+    }
+    & .input-message {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10%;
+    
+    & input {
+        width: 50rem;
+        height: 10rem;
+
+        
+    }
+
+    & button {
+        width: 7rem;
+        height: 2.3rem;
+        background-color: white;
+        border: #7441A7 solid 1.5px;
+        border-radius: 5px;
+        color: #7441A7;
+    }
+}
+}
