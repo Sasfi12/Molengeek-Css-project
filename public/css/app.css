@@ -15,13 +15,13 @@ body {
         width:auto ; 
         height: auto;
         position: relative;
-        right: 6%;  
+        right: 70px;  
     & button {
-            width: 80%;
-            height: 100%;
-            background-color: white;
+            width: 120px;
+            height: 40px;
+            background-color: #7441A7;
             border: #7441A7 solid 1px;
-            color: #7441A7;
+            color: white;
             border-radius:  40px;
         }
     }
