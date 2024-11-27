@@ -1,6 +1,7 @@
 body {
     margin: 0 ;
     margin-left: 10%; margin-right: 10%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 /*Some repeating classes */ 
 .whatido {
@@ -105,14 +106,33 @@ main {
             justify-content: center;
             flex-direction: column;
             align-items: center;
-            
+            padding: 2% 5% 2% 5%;
             & img {
                 width: 5rem;
                 height: 5rem;
             }
-
-
+            & h2 {
+                color: #7441A7;
+                font-weight: 900;
+            }
+            & p {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            & h1 {
+                font-size: xx-large;
+            }
+            & button {
+                width: 6rem;
+                height: 2rem;
+                background-color: #7441A7;
+                color: white;
+                border: none;
+            }
+            & button:hover {
+                cursor: pointer;
+            }
         }
         }
     }
-}
