@@ -21,6 +21,7 @@ body {
         font-size: 3rem;
     }
 }
+
 @media (min-width:1400px) {
     section {
         margin-top: 5%;
@@ -44,6 +45,7 @@ body {
     flex-direction: column;
     padding-bottom: 10%;
     position: relative;
+
     & div {
         width: auto;
         height: auto;
@@ -58,6 +60,7 @@ body {
             color: white;
             border-radius: 40px;
         }
+
         & button:hover {
             cursor: pointer;
         }
@@ -100,18 +103,21 @@ body {
     }
 
 }
+
 @media (max-width:920px) {
     #aboutMe {
         display: flex;
         flex-direction: column;
+
         & div {
             display: flex;
             justify-content: center;
             align-items: center;
         }
     }
-    
+
 }
+
 main {
     display: flex;
     flex-direction: column;
@@ -171,66 +177,70 @@ main {
         color: #7441A7;
     }
 }
+
 @media (max-width:920px) {
     #Service {
-    & .services {
-        display: flex;
-        gap: 5rem;
-        align-items: center;
-        flex-direction: column;
+        & .services {
+            display: flex;
+            gap: 5rem;
+            align-items: center;
+            flex-direction: column;
+        }
     }
-}
 }
 
 #Portfolio {
     & .folio-images {
         display: flex;
         justify-content: space-between;
+
         & .container {
-        position: relative;
-        & img {
-            width: 25rem;
-            height: 25rem;
+            position: relative;
+
+            & img {
+                width: 25rem;
+                height: 25rem;
+            }
+
+            & .le-message {
+                background-color: #e9daf7;
+                width: 25rem;
+                height: 25rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                clip-path: circle(0 at 50% 50%);
+                transition: 1s;
+                position: absolute;
+                bottom: 0.3rem;
+                opacity: 0.9;
+
+                & h2 {
+                    color: #7441A7;
+                }
+            }
+
         }
 
-        & .le-message {
-            background-color: #e9daf7;
-            width: 25rem;
-            height: 25rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            clip-path: circle(0 at 50% 50%);
-            transition: 1s;
-            position: absolute;
-            bottom: 0.3rem;
-            opacity: 0.9;
-
-            & h2 {
-                color: #7441A7;
+        & .container:hover {
+            .le-message {
+                clip-path: circle(100% at 50% 50%);
             }
         }
-
-    }
-
-    & .container:hover {
-        .le-message {
-            clip-path: circle(100% at 50% 50%);
-        }
     }
 }
-}
+
 @media (max-width:920px) {
     #Portfolio {
         & .folio-images {
             display: flex;
-            justify-content: space-between;   
+            justify-content: space-between;
             flex-direction: column;
             align-items: center;
             gap: 2rem;
-}
-}
+        }
+    }
 }
 
 #Pricing {
