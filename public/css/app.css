@@ -24,8 +24,8 @@ body {
 
 section {
     margin-top: 10%;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #Introduction {
@@ -162,6 +162,7 @@ main {
     & .folio-images {
         display: flex;
         justify-content: space-between;
+        gap: 10rem;
         & .container {
         position: relative;
         height: auto 0;
