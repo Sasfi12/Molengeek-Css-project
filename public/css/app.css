@@ -1,9 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-} 
-/*This part of the code will be revisited at the very end of the project, it will normally just require me to change paddings below , to fit the work. preferably be done before responsive. */
-
 body {
     margin: 0 auto;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -217,7 +211,7 @@ main {
             justify-content: center;
             flex-direction: column;
             align-items: center;
-            padding: 2% 5% 2% 5%;
+            padding: 2rem 5rem 2rem 5rem;
 
             & img {
                 width: 5rem;
