@@ -157,7 +157,7 @@ main {
                 }
         }
 #Portfolio {
-    & .folio-images {
+    & .folio-images  {
         display: flex;
         justify-content: space-between;
 
@@ -166,13 +166,16 @@ main {
             height: 25rem;
         }
         & .le-message {
-            background-color: #8c6eaa;
+            background-color: #e9daf7;
             width: 25rem;
             height: 25rem;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column ;
+            & h2 {
+                color: #7441A7;
+            }
         }
     }
 }
