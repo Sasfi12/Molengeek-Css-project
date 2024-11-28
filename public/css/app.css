@@ -120,10 +120,13 @@ main {
             padding: 5%;
             border: 0.5px solid;
             overflow: hidden;
-            transition: 2s;
             & div {
                 position: relative;
-                transition: 1s;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                transition: 1s ease-in-out;
             }
             & img {
                 width: 10rem;
