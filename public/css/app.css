@@ -74,12 +74,17 @@ main {
     display: flex;
     gap: 5%;
     justify-content: space-between;
-    & div {
+    align-items: center;
+    & > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         padding: 5%;
         border: 0.5px solid ;
-        justify-content: space-between;
+
         & img {
-            width: 6rem;
+            width: 10rem;
             height: 6rem;
         }
         & h3 {
