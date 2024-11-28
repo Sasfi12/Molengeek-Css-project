@@ -23,7 +23,10 @@ section {
 }
 #Introduction {
     /*Aligning and placing at the proper location */ 
-    
+    background-image: url("../images/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -291,13 +294,15 @@ main {
     & div:first-child {
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
     & .logos {
         display: flex;
         flex-direction: row;
+        justify-content: left;
         gap: 1%;
         & img {
-            width: 6em; height: 6em;
+            width: 3rem; height: 3rem;
         }
     }
 }
