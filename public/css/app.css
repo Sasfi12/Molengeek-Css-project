@@ -27,6 +27,8 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: local;
+    background-position-y: -13rem;
+    background-position-x: center ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,7 +37,7 @@ section {
         width:auto ; 
         height: auto;
         position: relative;
-        right: 70px;  
+        right: 3rem;  
     & button {
             width: 120px;
             height: 40px;
@@ -44,6 +46,16 @@ section {
             color: white;
             border-radius:  40px;
         }
+    }
+    & h1:first-child {
+        color: #595861;
+
+    }
+    & h1:nth-child(2) {
+        color: #43464E;
+    }
+    & p {
+        gap: 2rem; 
     }
 }
 
