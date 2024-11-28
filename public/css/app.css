@@ -221,6 +221,17 @@ main {
     }
 }
 }
+@media (max-width:920px) {
+    #Portfolio {
+        & .folio-images {
+            display: flex;
+            justify-content: space-between;   
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+}
+}
+}
 
 #Pricing {
     & .prices-box {
