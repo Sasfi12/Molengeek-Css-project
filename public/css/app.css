@@ -165,6 +165,15 @@ main {
             width: 25rem;
             height: 25rem;
         }
+        & .le-message {
+            background-color: #8c6eaa;
+            width: 25rem;
+            height: 25rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column ;
+        }
     }
 }
 
