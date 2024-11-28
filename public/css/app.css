@@ -172,6 +172,7 @@ main {
         position: relative;
         height: auto 0;
         width: auto 0;
+        border: solid;
         & img {
             width: 25rem;
             height: 25rem;
