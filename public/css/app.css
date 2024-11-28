@@ -114,6 +114,7 @@ main {
             flex-direction: column;
             padding: 5%;
             border: 0.5px solid;
+            overflow: hidden;
 
             & img {
                 width: 10rem;
@@ -123,10 +124,19 @@ main {
             & h3 {
                 color: #7441A7;
             }
+            
+            }
+            & div:hover {
+                content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas veritatis quo tenetur totam maxime molestias!";
+                position: relative;
+                bottom: 0;
+                height: 0px;
+                background-color: blue;
+                transition: 5s ease-out;
+                color: white;
+                }
         }
     }
-}
-
 #Portfolio {
     & .folio-images {
         display: flex;
