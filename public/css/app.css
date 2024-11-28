@@ -34,7 +34,8 @@ section {
 
 #Introduction {
     /*Aligning and placing at the proper location */
-    background-image: url(../images/header.jpg);    
+    background-image: url(../images/header.jpg),  linear-gradient(to bottom, rgb(22, 27, 25) 0%, rgb(168, 169, 189) 100%); ;
+        
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: local;
@@ -44,6 +45,7 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 10%;
 
     & div {
         width: auto;
@@ -113,6 +115,8 @@ main {
         align-items: center;
 
         &>div {
+            width: 30rem;
+            height: 10rem;
             padding: 5%;
             border: 0.5px solid;
             overflow: hidden;
@@ -143,7 +147,7 @@ main {
             & div:hover {
                  > div {
                     position: relative;
-                    transform: translateY(-15rem);
+                    transform: translateY(-20rem);
                 }   
                 }
                 }
