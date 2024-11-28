@@ -172,7 +172,6 @@ main {
         position: relative;
         height: auto 0;
         width: auto 0;
-        border: solid;
         & img {
             width: 25rem;
             height: 25rem;
@@ -188,8 +187,8 @@ main {
             flex-direction: column;
             clip-path: circle(0 at 50% 50%);
             transition: 1s;
-            position: relative;
-            bottom: 25.3rem;
+            position: absolute;
+            bottom: 0.3rem;
             opacity: 0.9;
 
             & h2 {
