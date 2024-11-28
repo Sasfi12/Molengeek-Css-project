@@ -90,8 +90,8 @@ body {
         }
 
         & button {
-            width: 20%;
-            height: 10%;
+            width: 6rem;
+            height: 2rem;
             background-color: white;
             border: #7441A7 solid 1px;
             color: #7441A7;
@@ -100,10 +100,15 @@ body {
     }
 
 }
-@media (max-width:920) {
+@media (max-width:920px) {
     #aboutMe {
         display: flex;
         flex-direction: column;
+        & div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
     
 }
@@ -165,6 +170,10 @@ main {
     & h3 {
         color: #7441A7;
     }
+}
+@media (max-width:920px) {
+    
+    
 }
 
 #Portfolio {
