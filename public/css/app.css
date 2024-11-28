@@ -16,7 +16,6 @@ body {
     justify-content: start;
     align-items: center;
     flex-direction: column;
-
     & p {
         color: #6F6F6F;
     }
@@ -29,6 +28,8 @@ body {
 
 section {
     margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 #Introduction {
@@ -131,7 +132,13 @@ main {
             & h3 {
                 color: #7441A7;
             }
-            
+            & p {
+                position: relative;
+                top: 10rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
             }
             & div:hover {
                  > div {
