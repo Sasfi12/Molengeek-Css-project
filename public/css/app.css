@@ -294,7 +294,16 @@ main {
         }
     }
 }
-
+@media (max-width:920px) {
+    #Pricing {
+        & .prices-box {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4em;
+        }
+    }
+}
 /* End of main */
 
 #workWithMe {
