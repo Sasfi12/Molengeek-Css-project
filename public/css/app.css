@@ -172,12 +172,14 @@ main {
     }
 }
 @media (max-width:920px) {
+    #Service {
     & .services {
         display: flex;
         gap: 5rem;
         align-items: center;
         flex-direction: column;
     }
+}
 }
 
 #Portfolio {
