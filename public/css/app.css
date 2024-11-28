@@ -1,3 +1,8 @@
+/* * {
+    padding: 0;
+    margin: 0;
+} */ /*This part of the code will be revisited at the very end of the project, it will normally just require me to change paddings below , to fit the work. preferably be done before responsive. */
+
 body {
     margin: 0;
     margin-left: 10%;
@@ -115,7 +120,11 @@ main {
             padding: 5%;
             border: 0.5px solid;
             overflow: hidden;
-
+            transition: 2s;
+            & div {
+                position: relative;
+                transition: 1s;
+            }
             & img {
                 width: 10rem;
                 height: 6rem;
@@ -127,16 +136,17 @@ main {
             
             }
             & div:hover {
-                content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas veritatis quo tenetur totam maxime molestias!";
-                position: relative;
-                bottom: 0;
-                height: 0px;
-                background-color: blue;
-                transition: 5s ease-out;
-                color: white;
+                 > div {
+                    position: relative;
+                    transform: translateY(-15rem);
+                }   
+                }
+                }
+    
+                & h3 {
+                    color: #7441A7;
                 }
         }
-    }
 #Portfolio {
     & .folio-images {
         display: flex;
