@@ -1,13 +1,14 @@
 /* * {
     padding: 0;
     margin: 0;
-} */ /*This part of the code will be revisited at the very end of the project, it will normally just require me to change paddings below , to fit the work. preferably be done before responsive. */
+} */
+/*This part of the code will be revisited at the very end of the project, it will normally just require me to change paddings below , to fit the work. preferably be done before responsive. */
 
 body {
     margin: 0 auto;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     gap: 5%;
-    
+
 }
 
 /*Some repeating classes and section rules */
@@ -16,6 +17,7 @@ body {
     justify-content: start;
     align-items: center;
     flex-direction: column;
+
     & p {
         color: #6F6F6F;
     }
@@ -34,8 +36,9 @@ section {
 
 #Introduction {
     /*Aligning and placing at the proper location */
-    background-image: url(../images/header.jpg),  linear-gradient(to bottom, rgb(22, 27, 25) 0%, rgb(168, 169, 189) 100%); ;
-        
+    background-image: url(../images/header.jpg), linear-gradient(to bottom, rgb(22, 27, 25) 0%, rgb(168, 169, 189) 100%);
+    ;
+
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: local;
@@ -120,6 +123,7 @@ main {
             padding: 5%;
             border: 0.5px solid;
             overflow: hidden;
+
             & div {
                 position: relative;
                 display: flex;
@@ -128,6 +132,7 @@ main {
                 flex-direction: column;
                 transition: 1s ease-in-out;
             }
+
             & img {
                 width: 10rem;
                 height: 6rem;
@@ -136,6 +141,7 @@ main {
             & h3 {
                 color: #7441A7;
             }
+
             & p {
                 position: relative;
                 top: 10rem;
@@ -143,29 +149,61 @@ main {
                 justify-content: center;
                 align-items: center;
             }
-            }
-            & div:hover {
-                 > div {
-                    position: relative;
-                    transform: translateY(-20rem);
-                }   
-                }
-                }
-    
-                & h3 {
-                    color: #7441A7;
-                }
         }
+
+        & div:hover {
+            >div {
+                position: relative;
+                transform: translateY(-20rem);
+            }
+        }
+    }
+
+    & h3 {
+        color: #7441A7;
+    }
+}
+
 #Portfolio {
     & .folio-images {
         display: flex;
         justify-content: space-between;
-
+        & .container {
+        position: relative;
+        height: auto 0;
+        width: auto 0;
         & img {
             width: 25rem;
             height: 25rem;
         }
+
+        & .le-message {
+            background-color: #e9daf7;
+            width: 25rem;
+            height: 25rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            clip-path: circle(0 at 50% 50%);
+            transition: 1s;
+            position: absolute;
+            bottom: 0.3rem;
+            opacity: 0.9;
+
+            & h2 {
+                color: #7441A7;
+            }
+        }
+
     }
+
+    & .container:hover {
+        .le-message {
+            clip-path: circle(100% at 50% 50%);
+        }
+    }
+}
 }
 
 #Pricing {
