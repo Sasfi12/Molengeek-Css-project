@@ -337,6 +337,26 @@ main {
         }
     }
 }
+@media (max-width:1580px) {
+    #Pricing {
+        & .prices-box {
+            gap: 2em;
+        & .box {
+            border-right: 1px #DFE3E7 solid !important;
+            }
+    }
+}
+}
+@media (max-width:1038px) {
+    #Pricing {
+        & .prices-box {
+
+        & .box {
+            border-right: 1px #DFE3E7 solid !important;
+            }
+    }
+}
+}
 @media (max-width:600px) {
     #Pricing {
         & .prices-box {
@@ -349,6 +369,7 @@ main {
             flex-direction: column;
             align-items: center;
             border-right: 1px #DFE3E7 solid !important;
+            padding: 1rem 2rem 1rem 2rem;
             }
     }
 }
