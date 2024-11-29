@@ -25,6 +25,7 @@ body {
     margin-top: 5%;
     margin-left: 15%;
     margin-right: 15%;
+    margin-bottom: 5%;
 }
 
 
@@ -354,9 +355,12 @@ main {
             top: 40px;
 
         }
-
+        & h2 {
+            color: #7441A7;
+        }
         & div:not(.testimony-text) {
             display: flex;
+            padding: 2rem;
             flex-direction: row;
 
             & .testimony-text {
@@ -364,8 +368,16 @@ main {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                padding-left: 2rem;
+                padding-left: 4rem ;
             }
+        }
+    }
+}
+@media (max-width:1100px) {
+    #Testimonial {
+        .Testimonies {
+            flex-direction: column;
+            gap: 2em;
         }
     }
 }
@@ -379,10 +391,11 @@ main {
         &>div {
             display: flex;
             flex-direction: row;
-            border: #6F6F6F 1px solid;
-            width: auto;
-            height: auto;
-
+            border: #6F6F6F 1px solid;  
+            & img {
+                max-width: 25rem;
+                max-height: 30rem;
+            }
             & .blog {
                 display: flex;
                 flex-direction: column;
@@ -408,7 +421,63 @@ main {
         }
     }
 }
+@media (max-width:1200px) {
+    #Blog {
+        .blogs {
+            & > div {
+                flex-direction: column;
+                align-items: center;
+                & img {
+                    max-width: fit-content;
+                }
+            }
+        }
+    }
+}
 
+@media (max-width:940px) {
+    #Blog {
+        .blogs {
+            & > div {
+                flex-direction: column;
+                align-items: center;
+                & img {
+                    width: 30rem;
+                    height: fit-content;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:690px) {
+    #Blog {
+        .blogs {
+            & > div {
+                flex-direction: column;
+                align-items: center;
+                & img {
+                    width: 25rem;
+                    height: fit-content;
+                }
+            }
+        }
+    }
+}
+@media (max-width:560px) {
+    #Blog {
+        .blogs {
+            & > div {
+                flex-direction: column;
+                align-items: center;
+                & img {
+                    width: 15rem;
+                    height: fit-content;
+                }
+            }
+        }
+    }
+}
 #Communicate {
     display: flex;
     flex-direction: column;
