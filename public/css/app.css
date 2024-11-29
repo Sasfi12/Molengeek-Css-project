@@ -1,8 +1,19 @@
+html {
+    margin: 0;
+}
+
 body {
     margin: 0 auto;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     gap: 5%;
-
+    background: linear-gradient(
+        to bottom, 
+        rgba(170, 140, 255, 0.5),
+        rgba(255, 255, 255, 1)
+      ),
+      url("../img/header.jpg") no-repeat center;
+    background-size: cover;
+    
 }
 
 /*Some repeating classes and section rules  START*/
@@ -27,23 +38,19 @@ body {
     margin-right: 15%;
     margin-bottom: 5%;
 }
+
 /*Some repeating classes and section rules  END */
 
 /* Introduction _________________________________________________________________________________________________________________________________________START*/
 #Introduction {
     /*Aligning and placing at the proper location */
-    background-image: url(../images/header.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: local;
-    background-position-y: -20rem;
-    background-position-x: center;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding-bottom: 10%;
     position: relative;
+    
 
     & div {
         width: auto;
@@ -590,7 +597,7 @@ main {
 @media (max-width:600px) {
     #Footer {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse  ;
         align-items: center;
     }
     
