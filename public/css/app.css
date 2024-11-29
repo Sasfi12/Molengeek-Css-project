@@ -5,7 +5,7 @@ body {
 
 }
 
-/*Some repeating classes and section rules */
+/*Some repeating classes and section rules  START*/
 .whatido {
     display: flex;
     justify-content: start;
@@ -27,9 +27,9 @@ body {
     margin-right: 15%;
     margin-bottom: 5%;
 }
+/*Some repeating classes and section rules  END */
 
-
-
+/* Introduction _________________________________________________________________________________________________________________________________________START*/
 #Introduction {
     /*Aligning and placing at the proper location */
     background-image: url(../images/header.jpg);
@@ -78,7 +78,9 @@ body {
         gap: 2rem;
     }
 }
+/* Introduction _________________________________________________________________________________________________________________________________________END*/
 
+/* aboutMe _________________________________________________________________________________________________________________________________________START*/
 #aboutMe {
     display: flex;
 
@@ -116,13 +118,15 @@ body {
     }
 
 }
+/* aboutMe _________________________________________________________________________________________________________________________________________END*/
 
+/*main is here because it start here in the html Start*/ 
 main {
     display: flex;
     flex-direction: column;
     gap: 10rem;
 }
-
+/*SERVICE _______________________________________________________________________________________________________________________________________________START*/
 #Service {
     & .services {
         display: flex;
@@ -187,7 +191,9 @@ main {
         }
     }
 }
+/*SERVICE END */
 
+/*PortFolio */
 #Portfolio {
     & .folio-images {
         display: flex;
@@ -241,7 +247,7 @@ main {
         }
     }
 }
-
+/*PRICING */
 #Pricing {
     & .prices-box {
         display: flex;
@@ -303,8 +309,10 @@ main {
         }
     }
 }
+/*end of pricing */ 
 /* End of main */
 
+/*Start of WorkWithME*/
 #workWithMe {
     background-color: #7441A7;
     padding-left: 24rem;
@@ -340,7 +348,8 @@ main {
         padding: 0;
     }
 }
-
+/*workWithMe*/
+/*Testimonial */ 
 #Testimonial {
     .Testimonies {
         display: flex;
@@ -381,7 +390,8 @@ main {
         }
     }
 }
-
+/*End of Testimonial*/
+/*START OF BLOG */ 
 #Blog {
     .blogs {
         display: flex;
@@ -478,6 +488,8 @@ main {
         }
     }
 }
+/*END OF BLOG */ 
+/*START OF COMMUNICATE*/
 #Communicate {
     display: flex;
     flex-direction: column;
@@ -546,8 +558,8 @@ main {
 }
 }
 }
-
-
+/*End of Communicate*/ 
+/*Start of footer*/
 #Footer {
     display: flex;
     justify-content: space-between;
@@ -578,3 +590,6 @@ main {
     }
     
 }
+/*End of Footer*/ 
+
+/*End of CSS*/ 
