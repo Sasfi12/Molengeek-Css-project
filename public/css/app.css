@@ -21,14 +21,12 @@ body {
         font-size: 3rem;
     }
 }
-
-@media (min-width:1400px) {
-    section {
-        margin-top: 5%;
-        margin-left: 15%;
-        margin-right: 15%;
-    }
+ footer , section:not(#workWithMe){
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
+
 
 
 #Introduction {
@@ -336,7 +334,11 @@ main {
         cursor: pointer;
     }
 }
-
+@media (max-width:1300px) {
+    #workWithMe {
+        padding: 0;
+    }
+}
 
 #Testimonial {
     .Testimonies {
@@ -463,11 +465,10 @@ main {
 #Footer {
     display: flex;
     justify-content: space-between;
-
     & div:first-child {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     & .logos {
