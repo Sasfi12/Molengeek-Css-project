@@ -36,7 +36,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: local;
-    background-position-y: -20em;
+    background-position-y: -20rem;
     background-position-x: center;
     display: flex;
     align-items: center;
@@ -78,6 +78,11 @@ body {
         gap: 2rem;
     }
 }
+@media (max-width:600)  {
+    #Introduction {
+        background-size: contain;
+    }
+}
 /* Introduction _________________________________________________________________________________________________________________________________________END*/
 
 /* aboutMe _________________________________________________________________________________________________________________________________________START*/
@@ -105,7 +110,7 @@ body {
 
 }
 
-@media (max-width:920px) {
+@media (max-width:970px) {
     #aboutMe {
         display: flex;
         flex-direction: column;
