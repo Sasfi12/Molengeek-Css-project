@@ -495,7 +495,11 @@ main {
 
         &>div {
             display: flex;
+            flex-wrap: wrap;
             gap: 2rem;
+        }
+        &>div:hover {
+            cursor: pointer;
         }
 
     }
@@ -524,7 +528,24 @@ main {
         }
     }
 }
-
+@media (max-width:1100px) {
+    #Communicate {
+        gap: 5rem;
+        .nouilles {
+            flex-direction: column;
+        }
+    }
+}
+@media (max-width:810px) {
+    #Communicate {
+    & .input-message {
+    & input{
+        width: 300px;
+        height: 10rem;
+    }
+}
+}
+}
 .pre-footer {
     & hr {
         background-color: #6F6F6F;
