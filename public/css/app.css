@@ -21,7 +21,7 @@ body {
     color: white;
     background: linear-gradient(
         to bottom, 
-        rgba(170, 140, 255, 0.5),
+        rgba(179, 163, 223, 0.5),
         rgba(255, 255, 255, 1)
       ),
       url('../images/header.jpg') no-repeat center;
@@ -425,8 +425,8 @@ main {
             height: 5rem;
             border-radius: 100%;
             position: relative;
-            left: 40px;
-            top: 40px;
+            left: 2.5rem;
+            top: 2rem;
 
         }
         & h2 {
@@ -575,7 +575,7 @@ main {
             flex-wrap: wrap;
             gap: 2rem;
         }
-        &>div:hover {
+        & div >div:hover {
             cursor: pointer;
         }
 
