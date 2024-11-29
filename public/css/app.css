@@ -546,11 +546,7 @@ main {
 }
 }
 }
-.pre-footer {
-    & hr {
-        background-color: #6F6F6F;
-    }
-}
+
 
 #Footer {
     display: flex;
@@ -572,4 +568,13 @@ main {
             height: 3rem;
         }
     }
+}
+
+@media (max-width:600px) {
+    #Footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }
